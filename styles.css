@@ -3,6 +3,7 @@
 body {
 	font-family: Gill Sans, san-seriff;
 	background-color: orange;
+	margin: 0;
 }
 .navbar {
 	position: fixed;
@@ -15,31 +16,31 @@ body {
 
 .navbar a {
 	text-decoration: none;
-	padding: 15px 20px;
+	padding: 10px 15px;
 	color: black;
 }
 .navbar a:hover {
 	background-color: darkorange;
-	padding: 20 px 30 px;
+	padding: 15 px 20 px;
 }
 
 .logo {
 	text-align: center;
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 .intro-section {
 	text-align: center;
-	padding: 100px;
+	padding: 50px;
 }
 
 .pricing {
 	text-align: center;
-	padding: 75px 0;
+	padding: 30px 0;
 }
 .book {
     text-align: center;
-    padding: 100px 0;
+    padding: 50px 0;
     background-color: dodgerblue;
     color: white;
 }
@@ -49,29 +50,29 @@ body {
 
 .meet {
 	text-align: center;
-	padding: 100px 0;
+	padding: 50px 0;
 }
 
 .contactus {
 	text-align: center;
-	padding: 50px 0;
+	padding: 20px 0;
 }
 
 .form {
 	text-align: center;
-	padding: 75px 0;
+	padding: 30px 0;
 	background-color: orange;
 	color: dodgerblue;
-	width: 75%;
+	width: 90%;
 	margin: 0 auto;
 }
 
 .contactinfo {
 	text-align: center;
-	padding: 75px 0;
+	padding: 30px 0;
 	background-color: dodgerblue;
 	color: white;
-	width: 75%;
+	width: 90%;
 	margin: 0 auto;
 }
 
@@ -80,4 +81,16 @@ body {
 	position: fixed;
 	bottom: 10px;
 	right: 10px;
+}
+@ media screen and (max-width: 768px) {
+	.navbar {
+		flex-direction: column;
+	}
+	.navbar a {
+		padding: 15px 0;
+		width: 100%
+	}
+	.navbar a:hover {
+		padding: 15px 0;
+	}
 }
